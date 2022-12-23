@@ -34,9 +34,6 @@ class ProductController{
         
         return response.json(products)
 }
-
 }
-
-
 
 export default new ProductController()
