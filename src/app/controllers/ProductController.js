@@ -1,5 +1,5 @@
 import * as Yup from 'yup'
-import Product from '../Product'
+import Product from '../models/Product'
 
 class ProductController{
     async store(request, response) {
@@ -27,6 +27,8 @@ class ProductController{
         })
         
         return response.json(product)
+    } catch (err) {
+        console.log(err)
     }
 
     async index(request, response) {
