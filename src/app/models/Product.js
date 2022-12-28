@@ -12,8 +12,8 @@ class Product extends Model {
                     type: Sequelize.VIRTUAL,
                     get(){
                         return `http://localhost:3000/product-file/${this.path}`
-                    }
-                }
+                    },
+                },
         },
         {
             sequelize,
