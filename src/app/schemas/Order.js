@@ -2,8 +2,8 @@ import mongoose from "mongoose";
 
 const OrderSchema = new mongoose.Schema({
 
-    user:{
-        id:{
+    user: {
+        id: {
             type: String,
             required: true,
         },
@@ -19,7 +19,7 @@ const OrderSchema = new mongoose.Schema({
                 required: true,
             },
             name: {
-                type: Strubg,
+                type: String,
                 required: true,
             },
             price: {
@@ -34,7 +34,7 @@ const OrderSchema = new mongoose.Schema({
                 type: String,
                 required: true,
             },
-            qauntity: {
+            quantity: {
                 type: Number,
                 required: true,
             },
@@ -43,8 +43,7 @@ const OrderSchema = new mongoose.Schema({
     status: {
         type: String,
         required: true,
-    }
-
+    },
 },
 {
     timestamps: true,
